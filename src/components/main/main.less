@@ -1,0 +1,246 @@
+@newsHei: 200px;
+ul {
+  margin: 0;
+}
+.carousel-hei1 {
+  height: 700px;
+}
+.topImg {
+  height: 100%;
+  cursor: pointer;
+}
+.main-content {
+  width: 1349px;
+  margin: 0 auto;
+}
+.news {
+  margin-top: 40px;
+  height: 250px;
+  .detail {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    &:first-child {
+      padding-left: 75px;
+      padding-right: 10px;
+    }
+    &:last-child {
+      padding-left: 10px;
+      padding-right: 75px;
+    }
+    .label {
+      position: relative;
+      color: #333;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 30px;
+      font-size: 24px;
+      img {
+        position: absolute;
+        left: -5px;
+        top: 7px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .content {
+      height: 200px;
+      .img {
+        width: 50%;
+        height: 100%;
+        float: left;
+        img {
+          width: 100%;
+          height: @newsHei;
+          cursor: pointer;
+        }
+      }
+      .new-detail {
+        width: 50%;
+        height: @newsHei;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #e8e8e8;
+        float: left;
+        .title {
+          color: #005ba8;
+          font-size: 16px;
+          font-weight: bold;
+          padding-bottom: 20px;
+          cursor: pointer;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &:hover {
+            color: #d82f2f;
+          }
+        }
+        .desc {
+          line-height: 24px;
+          overflow: hidden;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+.self-carousel {
+  margin-top: 50px;
+}
+.self-scroll {
+  position: relative;
+  margin-top: 50px;
+  .label {
+    width: 100%;
+    height: 50px;
+    img {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: 1px;
+    }
+    span {
+      margin-left: 5px;
+      font-size: 24px;
+    }
+  }
+  .content {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 0 75px;
+    ul {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transition: transform 0.3s linear;
+      backface-visibility: hidden;
+      perspective: 1000;
+      transform: translate3d(0, 0, 0);
+      li {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        width: 25%;
+        flex-direction: column;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        img {
+          width: 100%;
+          height: 200px;
+        }
+        span {
+          display: inline-block;
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          text-align: center;
+          background-color: #e8e8e8;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+.products {
+  height: 660px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .label,
+  .desc,
+  .self-btn {
+    position: absolute;
+    z-index: 10;
+  }
+  .label {
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #111;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      color: #d82f2f;
+    }
+  }
+  .desc {
+    top: 120px;
+    width: 100%;
+    text-align: center;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #777;
+    padding: 0 40px;
+  }
+}
+.resolve {
+  box-sizing: border-box;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0 75px;
+  .label {
+    width: 100%;
+    height: 50px;
+    img {
+      width: 40px;
+      position: relative;
+      top: 3px;
+    }
+    span {
+      margin-left: 5px;
+      font-size: 24px;
+    }
+  }
+  .jsb {
+    justify-content: space-between;
+  }
+  .content {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    .img {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+      border: 1px solid #ccc;
+      img {
+        cursor: pointer;
+        width: 100%;
+        height: 220px;
+      }
+    }
+    .title {
+      cursor: pointer;
+      font-size: 16px;
+      color: #005ba8;
+      font-weight: bold;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-top: 10px;
+      &:hover {
+        color: #d82f2f;
+      }
+    }
+    .desc {
+      line-height: 24px;
+      overflow: hidden;
+      color: #666;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}

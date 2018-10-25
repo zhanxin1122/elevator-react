@@ -1,0 +1,35 @@
+{
+  "path-autocomplete.extensionOnImport": false,
+  "path-autocomplete.pathMappings": {
+    "@": "${workspace}/src",
+    "#": "${workspace}/examples",
+    "/": "${workspace}/" // the root folder is now /src
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "html.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".wpy", ".html"],
+    "ignorePattern": ["**/module.js", "**/.git/**", "**/node_modules/**"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "react",
+      "autoFix": true
+    }
+  ],
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      // 属性强制折行对齐
+      "wrap_attributes": "force-aligned"
+    }
+  },
+  "vetur.validation.template": false
+}
