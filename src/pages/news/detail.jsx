@@ -118,7 +118,10 @@ class NewsDetail extends React.Component {
               return (
                 <li key={`rel-${i}`}>
                   <div className="time">{item.time}</div>
-                  <div className="title" onClick={this.toDetail.bind(this, item.id, true)}>
+                  <div
+                    className="title"
+                    onClick={this.toDetail.bind(this, item.id, true)}
+                  >
                     {item.title}
                   </div>
                 </li>
